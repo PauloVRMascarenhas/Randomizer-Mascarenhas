@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+body {
+    background-color: #070507;
+    font-family: 'Lacquer', cursive;
+    font-size: 40px;
+    overflow: hidden;
+
+}
+
+*{
+    transition: 0.5s;
+}
+
+.titulo {
+    text-align: center;
+    color: #faf7f7;
+    font-size: 120px;
+    font-weight: 1;
+    text-shadow: 2px 1px 1px red;
+
+
+}
+
+.listaj {
+    text-align: center;
+    color: white;
+
+}
+
+h1:hover {
+    color: red;
+
+
+}
+
+h2>a {
+    color: white;
+    font-size: 90px;
+    text-decoration: none;
+    font-weight: 1;
+    text-shadow: 2px 1px 1px red;
+}
+
+h2>a:hover {
+    color: red
+}
+
+div {
+    padding-top: 7%;
+    text-align: center;
+}
+
+p:hover {
+    color: red;
+}
+
+.bg_video {
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 22%;
+    z-index: -100;
+    background-size: cover;
+}
+
+.bg_video2 {
+    transform: rotateY(180deg);
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 22%;
+    z-index: -100;
+    background-size: cover;
+}
+
+/* PAGINA 2 */
+
+
