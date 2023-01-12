@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RANDOMIZER MASCARENHAS</title>
-    <link rel="shortcut icon" href="FAVICON.png" type="image/png">
+    <link rel="shortcut icon" href="imagens/FAVICON.png" type="image/x-icon">
 
     <style>
         @charset "UTF-8";
@@ -106,6 +106,44 @@
 
         }
 
+        #master{
+            padding: 40px;
+            font-size: 80px;
+            text-align: center;
+            font-family: 'Lacquer', cursive;
+            
+        }
+
+        #master:hover{
+            color: red;
+        }
+
+        button{
+            color: rgb(255, 217, 0);
+            background-color: rgb(0, 0, 0);
+            font-size: 30px;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            padding: 20px;
+          
+        }
+
+        button:hover{
+            background-color: rgb(39, 99, 52);
+            cursor: pointer;
+        }
+
+        #chosen_game{
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            
+            
+
+        }
+        
+
         main p{
             text-indent: 30px;
         }
@@ -152,6 +190,7 @@
 </head>
 
 <body>
+  
     <header>
         <h1>RANDOMIZER MASCARENHAS</h1>
         <p>E aí, tá afim de jogar o quê?</p>
@@ -162,6 +201,22 @@
         <a href="https://store.steampowered.com/app/1238840/Battlefield_1/" target="_blank">Battlefield 1</a>
         <a href="https://store.steampowered.com/app/686810/Hell_Let_Loose/" target="_blank">Hell Let Loose</a>
     </nav>
+    
+    <div id="master">Pergunte ao mestre</div>
+
+    <button id="pick-button">O que devo jogar, mestre?</button>
+    <p id="chosen_game"></p>
+    <script>
+        var jogos = ["Ready or Not", "EldenRing", "Battlefield1", "Hell Let loose"]
+        var button = document.getElementById("pick-button")
+        button.addEventListener("click", function() {
+        var chosen_game = jogos[Math.floor(Math.random() * jogos.length)];
+        var chosenGameElement = document.getElementById("chosen_game");
+        chosenGameElement.textContent = "Jogue este: " + chosen_game; });
+        
+
+    </script>
+
     <main>
         <article>
             <h1>
